@@ -1,0 +1,72 @@
+/* General Styles */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 columns for the workweek */
+    gap: 20px;
+}
+
+.calendar-cell {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.employee-list {
+    margin-top: 10px;
+}
+
+.employee-list strong {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 column for very small screens */
+    }
+}
